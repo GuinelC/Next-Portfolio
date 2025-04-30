@@ -10,7 +10,7 @@ export default function TypingEffect() {
 
   useEffect(() => {
     const current = words[wordIndex];
-    let typingSpeed = isDeleting ? 50 : 100;
+    const typingSpeed = isDeleting ? 50 : 100;
 
     const handleTyping = () => {
       if (isDeleting) {
@@ -30,7 +30,7 @@ export default function TypingEffect() {
 
     const timer = setTimeout(handleTyping, typingSpeed);
     return () => clearTimeout(timer);
-  }, [text, isDeleting, wordIndex]);
+  }, [text, isDeleting, wordIndex, words]);
 
   return (
     <h1 className="text-xl text-white font-semibold">

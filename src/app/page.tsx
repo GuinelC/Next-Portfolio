@@ -12,7 +12,7 @@ export default function Home() {
         alt="Image de fond de développeur web"
         fill // Permet de couvrir tout l’espace (à la place de background-image)
         className="z-0 object-cover"
-        priority // optimise le LCP !
+        priority
       />
         <Image 
           className="pic" 
@@ -25,7 +25,7 @@ export default function Home() {
         <div className="head-desc">
           <div className="pattern-dots-sm">_PORTFOLIO</div>
           <h1>Bienvenue</h1>
-          <h2>Moi c'est Charly Guinel.</h2>
+          <h2>Moi c&apos;est Charly Guinel.</h2> {/* Correction ici */}
           
           <div className="typing">
             <span className="text first-text">Je suis développeur</span>
@@ -34,13 +34,14 @@ export default function Home() {
           
           <p>
             <i className="fa-solid fa-terminal"></i> Je recherche une alternance dans le développement web, 
-            convaincu que ma passion pour le développement web et ma soif d'apprendre me permettront de relever de nouveaux défis. 
+            convaincu que ma passion pour le développement web et ma soif d&apos;apprendre me permettront de relever de nouveaux défis. {/* Correction ici */}
             <br /><br />
-            <i className="fa-solid fa-terminal"></i> L'alternance, c'est une opportunité pour moi de combiner mes connaissances 
-            théoriques avec une expérience pratique en entreprise. Travailler aux côtés de professionnels me permettra d'approfondir 
-            mes compétences techniques et d'acquérir une compréhension approfondie des processus de développement web.
+            <i className="fa-solid fa-terminal"></i> L&apos;alternance, c&apos;est une opportunité pour moi de combiner mes connaissances {/* Correction ici */}
+            théoriques avec une expérience pratique en entreprise. Travailler aux côtés de professionnels me permettra d&apos;approfondir {/* Correction ici */}
+            mes compétences techniques et d&apos;acquérir une compréhension approfondie des processus de développement web. {/* Correction ici */}
           </p>
         </div>
+
       </div>
 
       {/* ABOUT ME */}
@@ -58,17 +59,18 @@ export default function Home() {
             </div>
             <p>
               Après 10 ans dans la boulangerie, il était temps de rendre le tablier, et de me consacrer à
-              ma passion, l'informatique. Pour cela, j'ai décidé d'entamer une reconversion professionnelle en tant
+              ma passion, l&apos;informatique. {/* Correction ici */}
+              Pour cela, j&apos;ai décidé d&apos;entamer une reconversion professionnelle en tant
               que Développeur Web & Web Mobile. <br />
-              <br /> J'ai pour cela intégré une formation dans l'établissement Arinfo Nantes. <br /> Une formation pleine de
-              rebondissements, où je me suis totalement épanoui ce qui a fait que conforter mes attentes envers ce métier.
-              <br /> La finalité de cette formation était d'être capable de développer la partie Front-end & Back-end d'une
+              <br /> J&apos;ai pour cela intégré une formation dans l&apos;établissement Arinfo Nantes. {/* Correction ici */}
+              <br /> Une formation pleine de rebondissements, où je me suis totalement épanoui ce qui a fait que conforter mes attentes envers ce métier.
+              <br /> La finalité de cette formation était d&apos;être capable de développer la partie Front-end & Back-end d&apos;une {/* Correction ici */}
               application web ou web mobile en intégrant différentes recommandations et autres normes.
               <br />
               <br />
               <i className="fa-solid fa-trophy"></i> OBTENTION - du titre professionnel : Développeur web et web mobile. -
-              Reconnu par l’Etat et inscrit au répertoire national des certifications professionnelles (RNCP), de niveau 5
-              (bac+2).
+              Reconnu par l&apos;État et inscrit au répertoire national des certifications professionnelles (RNCP), de niveau 5
+              (bac+2). {/* Correction ici */}
             </p>
             <br />
           </div>
@@ -106,8 +108,8 @@ export default function Home() {
               Rigoureux, autonome et déterminé, je recherche activement une entreprise en alternance pour y réaliser de
               beaux projets que ce soit seul ou en équipe. Toute expérience est gratifiante pour parvenir à mes objectifs
               professionnels. <br />
-              Ayant connu le rythme de l’alternance par mon passé, je suis convaincu de cette manière d’apprendre. <br /> Je
-              suis disponible sur Nantes 44 et ses alentours, ainsi que Cholet 49.
+              Ayant connu le rythme de l&apos;alternance par mon passé, je suis convaincu de cette manière d&apos;apprendre. <br /> {/* Correction ici */}
+              Je suis disponible sur Nantes 44 et ses alentours, ainsi que Cholet 49.
             </p>
           </div>
         </div>
