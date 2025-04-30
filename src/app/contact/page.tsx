@@ -4,7 +4,7 @@ export default function Contact() {
       <main className="">
         <h1 className="text-4xl font-bold text-center">Contactez-nous</h1>
         <p className="text-lg text-center mt-4">
-          Si vous avez des questions, n'hésitez pas à nous contacter via le formulaire ci-dessous.
+          Si vous avez des questions, n&apos;hésitez pas à nous contacter via le formulaire ci-dessous.
         </p>
   
         {/* Formulaire de contact (simple) */}
