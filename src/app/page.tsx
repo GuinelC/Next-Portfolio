@@ -119,13 +119,13 @@ export default function Home() {
       <section id="git">
         <div className="pattern-dots-sm">
           <span className="title-dots">
-            <i className="fa-solid fa-code"></i>L'outil de versionning Git_
+            <i className="fa-solid fa-code"></i>L&apos;outil de versionning Git_
           </span>
         </div>
 
         <div className="headGit">
           <h2>
-            Comment j'utilise git <span>?</span>
+            Comment j&apos;utilise git <span>?</span>
           </h2>
 
           <Image
@@ -140,7 +140,7 @@ export default function Home() {
         <div className="containGit">
           <p>
             <i className="fa-solid fa-code-branch"></i> Pour pouvoir mener à bien mes projets, il est indispensable
-            d'utiliser l'outil de versionning git !
+            d&apos;utiliser l&apos;outil de versionning git !
           </p>
           <ul>
             <li>- Vérifier le statut de mes fichiers</li>
@@ -158,8 +158,8 @@ export default function Home() {
           Mes compétences
         </h2>
         <p>
-          Lors de ma formation de développeur et en réalisant des projets personnels en tant qu'autodidacte, <br />
-          j'ai acquis différentes compétences dans le développement web.
+          Lors de ma formation de développeur et en réalisant des projets personnels en tant qu&apos;autodidacte, <br />
+          j&apos;ai acquis différentes compétences dans le développement web.
         </p>
 
         <div className="skills">
@@ -174,7 +174,7 @@ export default function Home() {
               pour la réalisation de Wireframes et autres ... <br /> <br />
               <i className="fa-solid fa-laptop-code"></i> Création et intégration de sites web pour DESKTOP et
               responsive pour MOBILE, accessibles et répondant aux normes. <br /> <br />
-              <i className="fa-solid fa-terminal"></i> Les technologies que j'utilise sont : <br /> HTML, CSS,
+              <i className="fa-solid fa-terminal"></i> Les technologies que j&apos;utilise sont : <br /> HTML, CSS,
               Javascript/Jquery, utilisation du framework Bootstrap, et VueJS
             </p>
           </div>
@@ -201,7 +201,7 @@ export default function Home() {
               <p>
                 <i className="fa-solid fa-laptop-code"></i> Développement de sites web en PHP, création et gestion de
                 bases de données, avec interaction en requêtes SQL. <br /> <br />
-                <i className="fa-regular fa-file-code"></i> Pour obtenir des sites web dynamiques, création d'un CRUD
+                <i className="fa-regular fa-file-code"></i> Pour obtenir des sites web dynamiques, création d&apos;un CRUD
                 pour le back-end, ces applications sont développées en favorisant la sécurité des bases de données ainsi
                 que la protection des utilisateurs et de la gestion des rôles.
               </p>
@@ -213,7 +213,7 @@ export default function Home() {
         <div id="projet" className="projet">
           <h2 data-aos="zoom-in" data-aos-duration="750">Mes projets</h2>
           <p>
-            Voici différents projets que j'ai réalisés seul, mais de nouveaux projets sont en cours de réalisation ...
+            Voici différents projets que j&apos;ai réalisés seul, mais de nouveaux projets sont en cours de réalisation ...
           </p>
           <div className="projet-contain">
             {/* Projet 1 - Todo */}
