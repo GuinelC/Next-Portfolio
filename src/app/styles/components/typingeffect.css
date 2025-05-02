@@ -1,0 +1,31 @@
+.typing span {
+    font-size: 28px;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media screen and (max-width: 430px) {
+    .box {
+        display: block;
+    }
+
+    .dropdown-menu .pattern-dots-sm .title-dots{
+        height: 30px;
+        font-size: 30px;
+    }
+
+    #download{
+    font-family: Rajdhani;  
+    font-size: 25px;
+    }
+
+    .typing .text {
+        font-size: 25px;
+        height: 25px;
+    }
+    /* ---------------------- Responsive ---------------------- */
+    @media (max-width: 768px) {
+        .pic {
+            display: none;
+        }
+    }
+}

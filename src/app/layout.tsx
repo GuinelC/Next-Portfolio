@@ -1,19 +1,38 @@
 import type { Metadata } from "next";
 import Head from "next/head";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import { Caesar_Dressing, Roboto, Montserrat, Rajdhani } from 'next/font/google';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+// FONTS IMPORT
+const caesar = Caesar_Dressing({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-caesar',
+  display: 'swap',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const rajdhani = Rajdhani({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-rajdhani',
+  display: 'swap',
+});
+
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-roboto',
+  display: 'swap',
+});
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '600'],
+  variable: '--font-montserrat',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -44,7 +63,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr">
+    // Injections des fonts
+    <html lang="fr" className={`${caesar.variable} ${roboto.variable} ${montserrat.variable} ${rajdhani.variable}`}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Charly Guinel" />

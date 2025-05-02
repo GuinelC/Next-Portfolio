@@ -1,23 +1,48 @@
+"use client";
+import { usePathname, useRouter } from 'next/navigation';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Navbar() {
-  return (
-    <nav style={{ padding: '1rem', backgroundColor: '#333', color: 'white' }}>
-  
-        <p className="font-caesar text-4xl"><span>C</span>G</p>
+  const router = useRouter();
+  const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
 
-      <ul style={{ display: 'flex', justifyContent: 'space-around', listStyleType: 'none' }}>
+  const handleScrollLink = (id: string) => {
+    if (pathname !== '/') {
+      router.push(`/#${id}`);
+    } else {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    setMenuOpen(false);
+  };
+
+  return (
+    <nav className="navbar">
+      <p className="font-caesar text-4xl"><span>C</span>G</p>
+
+      <button className="burger" onClick={() => setMenuOpen(prev => !prev)}>☰</button>
+
+      <ul className={menuOpen ? 'open' : ''}>
+        {menuOpen && <li className="menu-title">MENU</li>}
         <li>
-          <Link href="/" style={{ color: 'white', textDecoration: 'none' }}>
-            Home
-          </Link>
+          <button onClick={() => handleScrollLink('aboutMe')} className="nav-link">À propos</button>
         </li>
         <li>
-          <Link href="/contact" style={{ color: 'white', textDecoration: 'none' }}>
-            Contact
-          </Link>
+          <button onClick={() => handleScrollLink('git')} className="nav-link">Git</button>
         </li>
-        {/* Autres liens si nécessaire */}
+        <li>
+          <button onClick={() => handleScrollLink('competences')} className="nav-link">Compétences</button>
+        </li>
+        <li>
+          <button onClick={() => handleScrollLink('projet')} className="nav-link">Projets</button>
+        </li>
+        <li>
+          <Link href="/contact" className="nav-link">Contact</Link>
+        </li>
       </ul>
     </nav>
   );

@@ -6,14 +6,14 @@ export default function Home() {
   return (
     <div className="min-h-screen p-2">
       {/* MAIN */}
-      <div className="head-Contain">
-      <Image
-        src="/img/webdev.jpg"
-        alt="Image de fond de développeur web"
-        fill // Permet de couvrir tout l’espace (à la place de background-image)
-        className="z-0 object-cover"
-        priority
-      />
+      <section className="head-Contain">
+        <Image
+          src="/img/webdev.jpg"
+          alt="Image de fond de développeur web"
+          fill // Permet de couvrir tout l’espace (à la place de background-image)
+          className="z-0 object-cover"
+          priority
+        />
         <Image 
           className="pic" 
           src="/img/cg.png" 
@@ -25,18 +25,14 @@ export default function Home() {
         <div className="head-desc">
           <h1>Bienvenue</h1>
           <h2>Moi c&apos;est Charly Guinel.</h2>
-          
           <div className="typing">
             <p className="inline">Je suis développeur <TypingEffect /></p>
           </div>
-          
           <p>
             Développeur web full-stack, je recherche une opportunité au sein d&apos;une entreprise dynamique pour concevoir et optimiser des applications web performantes et où mon savoir-faire en développement contribuera à transformer des idées ambitieuses en réalisations concrètes.
           </p>
-
         </div>
-
-      </div>
+      </section>
 
       {/* ABOUT ME */}
       <section id="aboutMe" className="aboutMe">
@@ -53,18 +49,18 @@ export default function Home() {
             </div>
             <p>
               Après 10 ans dans la boulangerie, il était temps de rendre le tablier, et de me consacrer à
-              ma passion, l&apos;informatique. {/* Correction ici */}
+              ma passion, l&apos;informatique.
               Pour cela, j&apos;ai décidé d&apos;entamer une reconversion professionnelle en tant
               que Développeur Web & Web Mobile. <br />
-              <br /> J&apos;ai pour cela intégré une formation dans l&apos;établissement Arinfo Nantes. {/* Correction ici */}
+              <br /> J&apos;ai pour cela intégré une formation dans l&apos;établissement Arinfo Nantes.
               <br /> Une formation pleine de rebondissements, où je me suis totalement épanoui ce qui a fait que conforter mes attentes envers ce métier.
-              <br /> La finalité de cette formation était d&apos;être capable de développer la partie Front-end & Back-end d&apos;une {/* Correction ici */}
+              <br /> La finalité de cette formation était d&apos;être capable de développer la partie Front-end & Back-end d&apos;une 
               application web ou web mobile en intégrant différentes recommandations et autres normes.
               <br />
               <br />
               <i className="fa-solid fa-trophy"></i> OBTENTION - du titre professionnel : Développeur web et web mobile. -
               Reconnu par l&apos;État et inscrit au répertoire national des certifications professionnelles (RNCP), de niveau 5
-              (bac+2). {/* Correction ici */}
+              (bac+2). 
             </p>
             <br />
           </div>
@@ -102,7 +98,7 @@ export default function Home() {
               Rigoureux, autonome et déterminé, je recherche activement une entreprise en alternance pour y réaliser de
               beaux projets que ce soit seul ou en équipe. Toute expérience est gratifiante pour parvenir à mes objectifs
               professionnels. <br />
-              Ayant connu le rythme de l&apos;alternance par mon passé, je suis convaincu de cette manière d&apos;apprendre. <br /> {/* Correction ici */}
+              Ayant connu le rythme de l&apos;alternance par mon passé, je suis convaincu de cette manière d&apos;apprendre. <br /> 
               Je suis disponible sur Nantes 44 et ses alentours, ainsi que Cholet 49.
             </p>
           </div>

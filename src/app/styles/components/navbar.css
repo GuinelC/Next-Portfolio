@@ -1,0 +1,127 @@
+/* Logo font */
+.font-caesar {
+  font-family: var(--font-caesar);
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 97%;
+  height: 55px;
+  border: 2px solid rgb(117, 117, 117);
+  margin: 20px auto;
+  padding: 0 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: rgba(51, 51, 51, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 2px;
+  z-index: 100;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav-link {
+  font-family: var(--font-rajdhani);
+  font-size: 21px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: rgb(0, 182, 94);
+}
+
+/* Burger menu button */
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.menu-title {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+
+  .menu-title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: rgb(0, 182, 94);
+    display: block;
+    margin: 30px 0;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 54px;
+    right: 0;
+    flex-direction: column;
+    background-color: rgba(25, 25, 25, 0.961);
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  nav ul.open {
+    min-height: 90vh;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: white;
+    border-radius: 12px;
+  }
+
+  .nav-link {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+
+  nav ul li {
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+}
+
+
+  /* .fa-download{
+      margin-right: 5px;
+  }
+
+  #download{
+      border-radius: 5px;
+      padding: 4px 10px;
+      font-size: 19px;
+      background-color: rgb(0, 182, 94);
+      color: black;
+  } */
+
+  /* .nav-items .down{
+      margin: 0;
+  } */

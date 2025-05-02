@@ -1,0 +1,198 @@
+/* ----- FOOTER ----- */
+/* LINKS */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.information{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: darkcyan; */
+  width: 35%;
+  height: 610px;
+}
+
+.information h2{
+    font-size: 60px;
+    font-family: sans-serif;
+    -webkit-text-stroke: 2px;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+    color: rgb(0, 182, 94);
+}
+
+.footer-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    /* background-color: darkorange; */
+}
+
+.fa-location-dot{
+    color: gray;
+    font-size: 25px;
+    margin-right: 20px;
+}
+.link{
+    display: flex;
+}
+
+.footer-link a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.footer-link h2{
+    margin: 0;  
+}
+.footer-link p{
+    font-family: Rajdhani;  
+}
+
+.footer-link a:hover{
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+
+/* FORM CONTACT */
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    /* height: auto; */
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Sarpanch';
+    /* background-color: yellow; */
+}
+
+.form-container h2{ 
+    font-size: 60px;
+    font-family: sans-serif;
+    -webkit-text-stroke: 2px;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1.5px;
+    color: rgb(0, 182, 94);
+    margin: 15px;
+}
+
+.form-container p{ 
+    color:  rgb(208, 208, 208);
+    margin: 0 0 15px 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: rgb(129, 10, 142); */
+    height: auto;
+}
+
+form button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(0, 182, 94);
+    border: none;
+    width: 200px;
+    margin-left: 8px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+form button .fa-envelope{
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+form button:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    background-color: rgb(14, 255, 138);
+    font-size: 15px;   
+}
+
+/* FORM INPUT */
+.inputBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin: 15px;
+}
+
+.inputBox input{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    background: #282828;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+.inputBox span{
+    position: absolute;
+    border-radius: 5px;
+    left: 0px;
+    top: 8px;
+    /* padding: 10px; */
+    pointer-events: none;
+    color: gray;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: 1s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span{
+    color: rgb(0, 182, 94);
+    transform: translateX(5px) translateY(-17px);
+    background-color: #282828; 
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+/* TEXT AREA */
+.inputBox textarea{
+    width: 100%;
+    height: 125px;
+    padding: 10px;
+    border: 1px solid gray;
+    background: #282828;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+.inputBox textarea:valid ~ span,
+.inputBox textarea:focus ~ span{
+    color: rgb(0, 182, 94);
+    transform: translateX(5px) translateY(-17px);
+    background-color: #282828; 
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+/* MODAL BUTTON  */
+.custom-confirm-button-class{
+    box-shadow: none !important;
+    width: 75px;
+  }
+.custom-modal-container-class {
+    font-family: 'Sarpanch';
+ }

@@ -1,15 +1,40 @@
 @import "tailwindcss";
-
-/* autres styles globaux ici... */
-
+@import './styles/components/navbar.css';
+@import './styles/components/footer.css';
+@import './styles/components/hero.css';
+@import './styles/components/typingeffect.css';
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #282828;
+}
+
 span{
   color: rgb(0, 182, 94);
+}
+
+/* cursor */
+.blinking-cursor {
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
 }
 
 /* @theme inline {

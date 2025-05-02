@@ -31,7 +31,7 @@ export default function TypingEffect() {
   }, [text, isDeleting, wordIndex, words]);
 
   return (
-    <div className="text-xl text-white font-semibold inline">
+    <div className="text-xl typing text-white font-semibold inline">
       <span className="text-xl text-white font-semibold">{text}</span>
       <p className="blinking-cursor">|</p>
     </div>
