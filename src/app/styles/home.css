@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -34,15 +36,18 @@ nav {
 }
 
 .nav-logo {
-  font-family: Caesar Dressing;
-  font-size: 40px;
-  margin: 0;
+  font-family: 'Caesar Dressing';
 }
 .nav-logo span{
     color:  rgb(0, 182, 94);;
+}
+
+.font-caesar {
+    font-family: "Caesar Dressing", system-ui;
+    font-weight: 400;
+    font-style: normal;
   }
   
-
 
 nav ul {
     display: flex;
@@ -376,7 +381,7 @@ nav a:hover {
     margin-top: 30px;
 }
 
-.aboutTop .pattern-dots-sm{
+.pattern-dots-sm{
     color: rgba(255, 255, 255, 0.926);
     margin: 20px 0 7px 0;
     width: 100%;
@@ -1388,3 +1393,17 @@ form button:hover{
     padding: 10px;
    }
 }
+
+/* cursor */
+.blinking-cursor {
+    display: inline-block;
+    margin-left: 2px;
+    animation: blink 1s steps(2, start) infinite;
+  }
+  
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+  

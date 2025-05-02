@@ -3,7 +3,9 @@ import Link from 'next/link';
 export default function Navbar() {
   return (
     <nav style={{ padding: '1rem', backgroundColor: '#333', color: 'white' }}>
-        <div className="logo font-bold text-3xl">CG</div>
+  
+        <p className="font-caesar text-4xl"><span>C</span>G</p>
+
       <ul style={{ display: 'flex', justifyContent: 'space-around', listStyleType: 'none' }}>
         <li>
           <Link href="/" style={{ color: 'white', textDecoration: 'none' }}>

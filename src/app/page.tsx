@@ -23,23 +23,17 @@ export default function Home() {
         />
         
         <div className="head-desc">
-          <div className="pattern-dots-sm">_PORTFOLIO</div>
           <h1>Bienvenue</h1>
-          <h2>Moi c&apos;est Charly Guinel.</h2> {/* Correction ici */}
+          <h2>Moi c&apos;est Charly Guinel.</h2>
           
           <div className="typing">
-            <span className="text first-text">Je suis développeur</span>
-            <TypingEffect />
+            <p className="inline">Je suis développeur <TypingEffect /></p>
           </div>
           
           <p>
-            <i className="fa-solid fa-terminal"></i> Je recherche une alternance dans le développement web, 
-            convaincu que ma passion pour le développement web et ma soif d&apos;apprendre me permettront de relever de nouveaux défis. {/* Correction ici */}
-            <br /><br />
-            <i className="fa-solid fa-terminal"></i> L&apos;alternance, c&apos;est une opportunité pour moi de combiner mes connaissances {/* Correction ici */}
-            théoriques avec une expérience pratique en entreprise. Travailler aux côtés de professionnels me permettra d&apos;approfondir {/* Correction ici */}
-            mes compétences techniques et d&apos;acquérir une compréhension approfondie des processus de développement web. {/* Correction ici */}
+            Développeur web full-stack, je recherche une opportunité au sein d&apos;une entreprise dynamique pour concevoir et optimiser des applications web performantes et où mon savoir-faire en développement contribuera à transformer des idées ambitieuses en réalisations concrètes.
           </p>
+
         </div>
 
       </div>

@@ -54,8 +54,14 @@ export default function RootLayout({
         />
         <meta name="keywords" content="portfolio, SEO, développeur web, front-end, back-end, Nantes, Guinel Charly" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap"
+          rel="stylesheet"
+        />     
       </Head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body>
         <Navbar />
         <main role="main">{children}</main>
         <Footer />

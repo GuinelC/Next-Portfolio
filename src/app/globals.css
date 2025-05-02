@@ -1,16 +1,23 @@
 @import "tailwindcss";
 
+/* autres styles globaux ici... */
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
+span{
+  color: rgb(0, 182, 94);
+}
+
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
+} */
 
 /* @media (prefers-color-scheme: dark) {
   :root {

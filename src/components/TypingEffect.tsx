@@ -1,42 +1,39 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
 export default function TypingEffect() {
-  // Définition des types pour les variables d'état
-  const words: string[] = ['Front-end', 'Back-end'];
-  const [text, setText] = useState<string>(''); // Texte actuellement affiché
-  const [wordIndex, setWordIndex] = useState<number>(0); // Index du mot actuel
-  const [isDeleting, setIsDeleting] = useState<boolean>(false); // Indicateur de suppression
+  const words = useMemo(() => ['Front-end', 'Back-end'], []);
+  const [text, setText] = useState('');
+  const [wordIndex, setWordIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
     const current = words[wordIndex];
-    const typingSpeed = isDeleting ? 50 : 100; // Vitesse de frappe
+    const typingSpeed = isDeleting ? 100 : 200; // ← 
+    const pauseBeforeDelete = 1000;
 
     const handleTyping = () => {
-      if (isDeleting) {
-        setText((prev) => prev.slice(0, -1)); // Supprimer un caractère
-      } else {
-        setText((prev) => current.slice(0, prev.length + 1)); // Ajouter un caractère
-      }
+      setText((prevText) =>
+        isDeleting ? prevText.slice(0, -1) : current.slice(0, prevText.length + 1)
+      );
 
-      // Lorsque le mot est complètement écrit
       if (!isDeleting && text === current) {
-        setTimeout(() => setIsDeleting(true), 1000); // Pause avant de commencer à supprimer
+        setTimeout(() => setIsDeleting(true), pauseBeforeDelete);
       } else if (isDeleting && text === '') {
         setIsDeleting(false);
-        setWordIndex((prev) => (prev + 1) % words.length); // Passer au mot suivant
+        setWordIndex((prev) => (prev + 1) % words.length);
       }
     };
 
-    const timer = setTimeout(handleTyping, typingSpeed); // Lancer la fonction de typing
-    return () => clearTimeout(timer); // Nettoyer le timer à la désactivation du composant
-  }, [text, isDeleting, wordIndex, words]); // Les dépendances de useEffect
+    const timer = setTimeout(handleTyping, typingSpeed);
+    return () => clearTimeout(timer);
+  }, [text, isDeleting, wordIndex, words]);
 
   return (
-    <h1 className="text-xl text-white font-semibold">
-      <span className="sec-tex">{text}</span>
-      <span className="blinking-cursor">|</span>
-    </h1>
+    <div className="text-xl text-white font-semibold inline">
+      <span className="text-xl text-white font-semibold">{text}</span>
+      <p className="blinking-cursor">|</p>
+    </div>
   );
 }
